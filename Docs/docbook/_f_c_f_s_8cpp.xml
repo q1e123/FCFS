@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__f_c_f_s_8cpp" xml:lang="en-US">
+<title>FCFS.cpp File Reference</title>
+<indexterm><primary>FCFS.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;
+#include &lt;queue&gt;
+#include &quot;Process.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="__f_c_f_s_8cpp_1a0719320dfe5ff2d7518c59c759a3e243">firstComeFirstServed</link> (std::priority_queue&lt; <link linkend="_class_process">Process</link> &gt; processQueue)</para>
+
+<para>FCFS algorithm. All results (total execution time, total wait time, total idle time) are printed. </para>
+</listitem>
+            <listitem><para>std::priority_queue&lt; <link linkend="_class_process">Process</link> &gt; <link linkend="__f_c_f_s_8cpp_1af58a86e3c5ab95ff80789c0415b2a102">getProcessQueue</link> ()</para>
+
+<para>Function used to read processes. </para>
+</listitem>
+            <listitem><para>int <link linkend="__f_c_f_s_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> ()</para>
+
+<para>Main function. Calles getProcessQueue and firstComeFirstServed. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__f_c_f_s_8cpp_1a0719320dfe5ff2d7518c59c759a3e243"/><section>
+    <title>firstComeFirstServed()</title>
+<indexterm><primary>firstComeFirstServed</primary><secondary>FCFS.cpp</secondary></indexterm>
+<indexterm><primary>FCFS.cpp</primary><secondary>firstComeFirstServed</secondary></indexterm>
+<para><computeroutput>void firstComeFirstServed (std::priority_queue&lt; <link linkend="_class_process">Process</link> &gt; processQueue)</computeroutput></para><para>
+
+<para>FCFS algorithm. All results (total execution time, total wait time, total idle time) are printed. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>processQueue</entry><entry>
+<para>min-heap that contains processes </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>void </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__f_c_f_s_8cpp_1af58a86e3c5ab95ff80789c0415b2a102"/><section>
+    <title>getProcessQueue()</title>
+<indexterm><primary>getProcessQueue</primary><secondary>FCFS.cpp</secondary></indexterm>
+<indexterm><primary>FCFS.cpp</primary><secondary>getProcessQueue</secondary></indexterm>
+<para><computeroutput>std::priority_queue&lt; <link linkend="_class_process">Process</link> &gt; getProcessQueue ( )</computeroutput></para><para>
+
+<para>Function used to read processes. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>processQueue min-heap that contains processes </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__f_c_f_s_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>FCFS.cpp</secondary></indexterm>
+<indexterm><primary>FCFS.cpp</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main ( )</computeroutput></para><para>
+
+<para>Main function. Calles getProcessQueue and firstComeFirstServed. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>0 </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

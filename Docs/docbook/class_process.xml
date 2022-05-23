@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_process" xml:lang="en-US">
+<title>Process Class Reference</title>
+<indexterm><primary>Process</primary></indexterm>
+<para>
+
+<para>Class to emulate process proprieties. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Process.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_process_1a00db0496750c8f20e52e1181b88ba5c7">Process</link> (const std::string &amp;name, double start_time, double completionTime)</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_process_1a0f59ce442133b9a5e1be5f9225a69214">get_name</link> () const</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_process_1ae0e01833ecd0af870a206da0ed2d74f4">set_name</link> (const std::string &amp;name)</para>
+</listitem>
+            <listitem><para>double <link linkend="_class_process_1ae289921cfc4ae34c6182b6ab6adf056d">get_start_time</link> () const</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_process_1a878486c50899cff21cb4d636a225adda">set_start_time</link> (const double start_time)</para>
+</listitem>
+            <listitem><para>double <link linkend="_class_process_1a37f9e7da6bafb8adca92a4943095f04e">get_completion_t_ime</link> () const</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_process_1a045ae183cc38deab6f8d4c4c3a493ef5">set_completion_t_ime</link> (const double completion_t_ime)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_process_1aa6633293a37a4994490dc51f4587d54d">operator&lt;</link> (const <link linkend="_class_process">Process</link> &amp;lhs, const <link linkend="_class_process">Process</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_process_1aba117e69376a699bebada27e987180c1">operator&lt;=</link> (const <link linkend="_class_process">Process</link> &amp;lhs, const <link linkend="_class_process">Process</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_process_1a799141a398684a8e8ff172e4d1b7d729">operator&gt;</link> (const <link linkend="_class_process">Process</link> &amp;lhs, const <link linkend="_class_process">Process</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>std::ostream &amp; <link linkend="_class_process_1aa8e6587ea22b82abb32b45164c9f4501">operator&lt;&lt;</link> (std::ostream &amp;os, const <link linkend="_class_process">Process</link> &amp;obj)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class to emulate process proprieties. </para>
+
+
+
+<para>Class used to emulate process proprieties during FCFS algorithm </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_process_1a00db0496750c8f20e52e1181b88ba5c7"/><section>
+    <title>Process()</title>
+<indexterm><primary>Process</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>Process</secondary></indexterm>
+<para><computeroutput>Process::Process (const std::string &amp; name, double start_time, double completionTime)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_process_1a37f9e7da6bafb8adca92a4943095f04e"/><section>
+    <title>get_completion_t_ime()</title>
+<indexterm><primary>get_completion_t_ime</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>get_completion_t_ime</secondary></indexterm>
+<para><computeroutput>double Process::get_completion_t_ime ( ) const</computeroutput></para></section>
+<anchor xml:id="_class_process_1a0f59ce442133b9a5e1be5f9225a69214"/><section>
+    <title>get_name()</title>
+<indexterm><primary>get_name</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>get_name</secondary></indexterm>
+<para><computeroutput>std::string Process::get_name ( ) const</computeroutput></para></section>
+<anchor xml:id="_class_process_1ae289921cfc4ae34c6182b6ab6adf056d"/><section>
+    <title>get_start_time()</title>
+<indexterm><primary>get_start_time</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>get_start_time</secondary></indexterm>
+<para><computeroutput>double Process::get_start_time ( ) const</computeroutput></para></section>
+<anchor xml:id="_class_process_1a045ae183cc38deab6f8d4c4c3a493ef5"/><section>
+    <title>set_completion_t_ime()</title>
+<indexterm><primary>set_completion_t_ime</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>set_completion_t_ime</secondary></indexterm>
+<para><computeroutput>void Process::set_completion_t_ime (const double completion_t_ime)</computeroutput></para></section>
+<anchor xml:id="_class_process_1ae0e01833ecd0af870a206da0ed2d74f4"/><section>
+    <title>set_name()</title>
+<indexterm><primary>set_name</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>set_name</secondary></indexterm>
+<para><computeroutput>void Process::set_name (const std::string &amp; name)</computeroutput></para></section>
+<anchor xml:id="_class_process_1a878486c50899cff21cb4d636a225adda"/><section>
+    <title>set_start_time()</title>
+<indexterm><primary>set_start_time</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>set_start_time</secondary></indexterm>
+<para><computeroutput>void Process::set_start_time (const double start_time)</computeroutput></para></section>
+</section>
+<section>
+<title>Friends And Related Function Documentation</title>
+<anchor xml:id="_class_process_1aa6633293a37a4994490dc51f4587d54d"/><section>
+    <title>operator&lt;</title>
+<indexterm><primary>operator&lt;</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>operator&lt;</secondary></indexterm>
+<para><computeroutput>bool operator&lt; (const <link linkend="_class_process">Process</link> &amp; lhs, const <link linkend="_class_process">Process</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_process_1aa8e6587ea22b82abb32b45164c9f4501"/><section>
+    <title>operator&lt;&lt;</title>
+<indexterm><primary>operator&lt;&lt;</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>operator&lt;&lt;</secondary></indexterm>
+<para><computeroutput>std::ostream &amp; operator&lt;&lt; (std::ostream &amp; os, const <link linkend="_class_process">Process</link> &amp; obj)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_process_1aba117e69376a699bebada27e987180c1"/><section>
+    <title>operator&lt;=</title>
+<indexterm><primary>operator&lt;=</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>operator&lt;=</secondary></indexterm>
+<para><computeroutput>bool operator&lt;= (const <link linkend="_class_process">Process</link> &amp; lhs, const <link linkend="_class_process">Process</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_process_1a799141a398684a8e8ff172e4d1b7d729"/><section>
+    <title>operator&gt;</title>
+<indexterm><primary>operator&gt;</primary><secondary>Process</secondary></indexterm>
+<indexterm><primary>Process</primary><secondary>operator&gt;</secondary></indexterm>
+<para><computeroutput>bool operator&gt; (const <link linkend="_class_process">Process</link> &amp; lhs, const <link linkend="_class_process">Process</link> &amp; rhs)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+<link linkend="__process_8h">Process.h</link><link linkend="__process_8cpp">Process.cpp</link></section>
+</section>

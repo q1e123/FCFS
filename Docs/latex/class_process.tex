@@ -1,0 +1,125 @@
+\hypertarget{class_process}{}\doxysection{Process Class Reference}
+\label{class_process}\index{Process@{Process}}
+
+
+Class to emulate process proprieties.  
+
+
+
+
+{\ttfamily \#include $<$Process.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_process_a00db0496750c8f20e52e1181b88ba5c7}{Process}} (const std\+::string \&name, double start\+\_\+time, double completion\+Time)
+\item 
+std\+::string \mbox{\hyperlink{class_process_a0f59ce442133b9a5e1be5f9225a69214}{get\+\_\+name}} () const
+\item 
+void \mbox{\hyperlink{class_process_ae0e01833ecd0af870a206da0ed2d74f4}{set\+\_\+name}} (const std\+::string \&name)
+\item 
+double \mbox{\hyperlink{class_process_ae289921cfc4ae34c6182b6ab6adf056d}{get\+\_\+start\+\_\+time}} () const
+\item 
+void \mbox{\hyperlink{class_process_a878486c50899cff21cb4d636a225adda}{set\+\_\+start\+\_\+time}} (const double start\+\_\+time)
+\item 
+double \mbox{\hyperlink{class_process_a37f9e7da6bafb8adca92a4943095f04e}{get\+\_\+completion\+\_\+t\+\_\+ime}} () const
+\item 
+void \mbox{\hyperlink{class_process_a045ae183cc38deab6f8d4c4c3a493ef5}{set\+\_\+completion\+\_\+t\+\_\+ime}} (const double completion\+\_\+t\+\_\+ime)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_process_aa6633293a37a4994490dc51f4587d54d}{operator$<$}} (const \mbox{\hyperlink{class_process}{Process}} \&lhs, const \mbox{\hyperlink{class_process}{Process}} \&rhs)
+\item 
+bool \mbox{\hyperlink{class_process_aba117e69376a699bebada27e987180c1}{operator$<$=}} (const \mbox{\hyperlink{class_process}{Process}} \&lhs, const \mbox{\hyperlink{class_process}{Process}} \&rhs)
+\item 
+bool \mbox{\hyperlink{class_process_a799141a398684a8e8ff172e4d1b7d729}{operator$>$}} (const \mbox{\hyperlink{class_process}{Process}} \&lhs, const \mbox{\hyperlink{class_process}{Process}} \&rhs)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_process_aa8e6587ea22b82abb32b45164c9f4501}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_process}{Process}} \&obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to emulate process proprieties. 
+
+Class used to emulate process proprieties during FCFS algorithm 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_process_a00db0496750c8f20e52e1181b88ba5c7}\label{class_process_a00db0496750c8f20e52e1181b88ba5c7}} 
+\index{Process@{Process}!Process@{Process}}
+\index{Process@{Process}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{Process()}{Process()}}
+{\footnotesize\ttfamily Process\+::\+Process (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{double}]{start\+\_\+time,  }\item[{double}]{completion\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_process_a37f9e7da6bafb8adca92a4943095f04e}\label{class_process_a37f9e7da6bafb8adca92a4943095f04e}} 
+\index{Process@{Process}!get\_completion\_t\_ime@{get\_completion\_t\_ime}}
+\index{get\_completion\_t\_ime@{get\_completion\_t\_ime}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{get\_completion\_t\_ime()}{get\_completion\_t\_ime()}}
+{\footnotesize\ttfamily double Process\+::get\+\_\+completion\+\_\+t\+\_\+ime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_process_a0f59ce442133b9a5e1be5f9225a69214}\label{class_process_a0f59ce442133b9a5e1be5f9225a69214}} 
+\index{Process@{Process}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily std\+::string Process\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_process_ae289921cfc4ae34c6182b6ab6adf056d}\label{class_process_ae289921cfc4ae34c6182b6ab6adf056d}} 
+\index{Process@{Process}!get\_start\_time@{get\_start\_time}}
+\index{get\_start\_time@{get\_start\_time}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{get\_start\_time()}{get\_start\_time()}}
+{\footnotesize\ttfamily double Process\+::get\+\_\+start\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_process_a045ae183cc38deab6f8d4c4c3a493ef5}\label{class_process_a045ae183cc38deab6f8d4c4c3a493ef5}} 
+\index{Process@{Process}!set\_completion\_t\_ime@{set\_completion\_t\_ime}}
+\index{set\_completion\_t\_ime@{set\_completion\_t\_ime}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{set\_completion\_t\_ime()}{set\_completion\_t\_ime()}}
+{\footnotesize\ttfamily void Process\+::set\+\_\+completion\+\_\+t\+\_\+ime (\begin{DoxyParamCaption}\item[{const double}]{completion\+\_\+t\+\_\+ime }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_process_ae0e01833ecd0af870a206da0ed2d74f4}\label{class_process_ae0e01833ecd0af870a206da0ed2d74f4}} 
+\index{Process@{Process}!set\_name@{set\_name}}
+\index{set\_name@{set\_name}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{set\_name()}{set\_name()}}
+{\footnotesize\ttfamily void Process\+::set\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_process_a878486c50899cff21cb4d636a225adda}\label{class_process_a878486c50899cff21cb4d636a225adda}} 
+\index{Process@{Process}!set\_start\_time@{set\_start\_time}}
+\index{set\_start\_time@{set\_start\_time}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{set\_start\_time()}{set\_start\_time()}}
+{\footnotesize\ttfamily void Process\+::set\+\_\+start\+\_\+time (\begin{DoxyParamCaption}\item[{const double}]{start\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_process_aa6633293a37a4994490dc51f4587d54d}\label{class_process_aa6633293a37a4994490dc51f4587d54d}} 
+\index{Process@{Process}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_process}{Process}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{class_process}{Process}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_process_aa8e6587ea22b82abb32b45164c9f4501}\label{class_process_aa8e6587ea22b82abb32b45164c9f4501}} 
+\index{Process@{Process}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_process}{Process}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_process_aba117e69376a699bebada27e987180c1}\label{class_process_aba117e69376a699bebada27e987180c1}} 
+\index{Process@{Process}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{operator$<$=}{operator<=}}
+{\footnotesize\ttfamily bool operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_process}{Process}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{class_process}{Process}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_process_a799141a398684a8e8ff172e4d1b7d729}\label{class_process_a799141a398684a8e8ff172e4d1b7d729}} 
+\index{Process@{Process}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Process@{Process}}
+\doxysubsubsection{\texorpdfstring{operator$>$}{operator>}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_process}{Process}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{class_process}{Process}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_process_8h}{Process.\+h}}\item 
+\mbox{\hyperlink{_process_8cpp}{Process.\+cpp}}\end{DoxyCompactItemize}

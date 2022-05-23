@@ -1,3 +1,10 @@
+/*! \class Process
+	\brief Class to emulate process proprieties
+
+	Class used to emulate process proprieties during FCFS algorithm
+*/
+
+
 #pragma once
 #include <ostream>
 #include <string>

@@ -1,0 +1,74 @@
+.TH "FCFS.cpp" 3 "Mon May 23 2022" "Version 2022.05" "FCFS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FCFS.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <queue>\fP
+.br
+\fC#include 'Process\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBfirstComeFirstServed\fP (std::priority_queue< \fBProcess\fP > processQueue)"
+.br
+.RI "FCFS algorithm\&. All results (total execution time, total wait time, total idle time) are printed\&. "
+.ti -1c
+.RI "std::priority_queue< \fBProcess\fP > \fBgetProcessQueue\fP ()"
+.br
+.RI "Function used to read processes\&. "
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.RI "Main function\&. Calles getProcessQueue and firstComeFirstServed\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void firstComeFirstServed (std::priority_queue< \fBProcess\fP > processQueue)"
+
+.PP
+FCFS algorithm\&. All results (total execution time, total wait time, total idle time) are printed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIprocessQueue\fP min-heap that contains processes 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "std::priority_queue< \fBProcess\fP > getProcessQueue ()"
+
+.PP
+Function used to read processes\&. 
+.PP
+\fBReturns\fP
+.RS 4
+processQueue min-heap that contains processes 
+.RE
+.PP
+
+.SS "int main ()"
+
+.PP
+Main function\&. Calles getProcessQueue and firstComeFirstServed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FCFS from the source code\&.

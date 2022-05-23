@@ -1,0 +1,56 @@
+\hypertarget{_process_8h_source}{}\doxysection{Process.\+h}
+\mbox{\hyperlink{_process_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <ostream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_process}{Process}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_process_a00db0496750c8f20e52e1181b88ba5c7}{Process}}(\textcolor{keyword}{const} std::string\& name, \textcolor{keywordtype}{double} start\_time, \textcolor{keywordtype}{double} completionTime)}
+\DoxyCodeLine{15         : name(name),}
+\DoxyCodeLine{16           startTime(start\_time),}
+\DoxyCodeLine{17           completionTime(completionTime)}
+\DoxyCodeLine{18     \{}
+\DoxyCodeLine{19     \}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     std::string \mbox{\hyperlink{class_process_a0f59ce442133b9a5e1be5f9225a69214}{get\_name}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_process_ae0e01833ecd0af870a206da0ed2d74f4}{set\_name}}(\textcolor{keyword}{const} std::string\& name);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_process_ae289921cfc4ae34c6182b6ab6adf056d}{get\_start\_time}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_process_a878486c50899cff21cb4d636a225adda}{set\_start\_time}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} start\_time);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_process_aa6633293a37a4994490dc51f4587d54d}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_process}{Process}}\& lhs, \textcolor{keyword}{const} \mbox{\hyperlink{class_process}{Process}}\& rhs)}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \textcolor{keywordflow}{return} lhs.startTime > rhs.startTime;}
+\DoxyCodeLine{29     \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_process_aba117e69376a699bebada27e987180c1}{operator<=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_process}{Process}}\& lhs, \textcolor{keyword}{const} \mbox{\hyperlink{class_process}{Process}}\& rhs)}
+\DoxyCodeLine{32     \{}
+\DoxyCodeLine{33         \textcolor{keywordflow}{return} !(rhs < lhs);}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_process_a799141a398684a8e8ff172e4d1b7d729}{operator>}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_process}{Process}}\& lhs, \textcolor{keyword}{const} \mbox{\hyperlink{class_process}{Process}}\& rhs)}
+\DoxyCodeLine{37     \{}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} rhs < lhs;}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_process_a37f9e7da6bafb8adca92a4943095f04e}{get\_completion\_t\_ime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_process_a045ae183cc38deab6f8d4c4c3a493ef5}{set\_completion\_t\_ime}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} completion\_t\_ime);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{class_process_aa8e6587ea22b82abb32b45164c9f4501}{operator<<}}(std::ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{class_process}{Process}}\& obj)}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         \textcolor{keywordflow}{return} os}
+\DoxyCodeLine{47             << \textcolor{stringliteral}{"{}name: "{}} << obj.name}
+\DoxyCodeLine{48             << \textcolor{stringliteral}{"{} startTime: "{}} << obj.startTime}
+\DoxyCodeLine{49             << \textcolor{stringliteral}{"{} completionTime: "{}} << obj.completionTime;}
+\DoxyCodeLine{50     \}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{keyword}{private}:}
+\DoxyCodeLine{53     std::string name;}
+\DoxyCodeLine{54     \textcolor{keywordtype}{double} startTime;}
+\DoxyCodeLine{55     \textcolor{keywordtype}{double} completionTime;}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+
+\end{DoxyCode}

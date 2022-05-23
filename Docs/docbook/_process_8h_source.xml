@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__process_8h_source" xml:lang="en-US">
+<title>Process.h</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+8 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+9 <emphasis role="preprocessor">#include&#32;&lt;ostream&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_process">Process</link>
+12 {
+13 <emphasis role="keyword">public</emphasis>:
+14 &#32;&#32;&#32;&#32;<link linkend="_class_process_1a00db0496750c8f20e52e1181b88ba5c7">Process</link>(<emphasis role="keyword">const</emphasis>&#32;std::string&amp;&#32;name,&#32;<emphasis role="keywordtype">double</emphasis>&#32;start_time,&#32;<emphasis role="keywordtype">double</emphasis>&#32;completionTime)
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;name(name),
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;startTime(start_time),
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;completionTime(completionTime)
+18 &#32;&#32;&#32;&#32;{
+19 &#32;&#32;&#32;&#32;}
+20 
+21 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_process_1a0f59ce442133b9a5e1be5f9225a69214">get_name</link>()&#32;<emphasis role="keyword">const</emphasis>;
+22 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_process_1ae0e01833ecd0af870a206da0ed2d74f4">set_name</link>(<emphasis role="keyword">const</emphasis>&#32;std::string&amp;&#32;name);
+23 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_class_process_1ae289921cfc4ae34c6182b6ab6adf056d">get_start_time</link>()&#32;<emphasis role="keyword">const</emphasis>;
+24 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_process_1a878486c50899cff21cb4d636a225adda">set_start_time</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;start_time);
+25 
+26 &#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_process_1aa6633293a37a4994490dc51f4587d54d">operator&lt;</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_process">Process</link>&amp;&#32;lhs,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_process">Process</link>&amp;&#32;rhs)
+27 &#32;&#32;&#32;&#32;{
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;lhs.startTime&#32;&gt;&#32;rhs.startTime;
+29 &#32;&#32;&#32;&#32;}
+30 
+31 &#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_process_1aba117e69376a699bebada27e987180c1">operator&lt;=</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_process">Process</link>&amp;&#32;lhs,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_process">Process</link>&amp;&#32;rhs)
+32 &#32;&#32;&#32;&#32;{
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;!(rhs&#32;&lt;&#32;lhs);
+34 &#32;&#32;&#32;&#32;}
+35 
+36 &#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_process_1a799141a398684a8e8ff172e4d1b7d729">operator&gt;</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_process">Process</link>&amp;&#32;lhs,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_process">Process</link>&amp;&#32;rhs)
+37 &#32;&#32;&#32;&#32;{
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;rhs&#32;&lt;&#32;lhs;
+39 &#32;&#32;&#32;&#32;}
+40 
+41 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_class_process_1a37f9e7da6bafb8adca92a4943095f04e">get_completion_t_ime</link>()&#32;<emphasis role="keyword">const</emphasis>;
+42 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_process_1a045ae183cc38deab6f8d4c4c3a493ef5">set_completion_t_ime</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;completion_t_ime);
+43 
+44 &#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;std::ostream&amp;&#32;<link linkend="_class_process_1aa8e6587ea22b82abb32b45164c9f4501">operator&lt;&lt;</link>(std::ostream&amp;&#32;os,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_process">Process</link>&amp;&#32;obj)
+45 &#32;&#32;&#32;&#32;{
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;os
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;name:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;obj.name
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;startTime:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;obj.startTime
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;completionTime:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;obj.completionTime;
+50 &#32;&#32;&#32;&#32;}
+51 
+52 <emphasis role="keyword">private</emphasis>:
+53 &#32;&#32;&#32;&#32;std::string&#32;name;
+54 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;startTime;
+55 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;completionTime;
+56 };
+57 
+</programlisting></section>

@@ -1,8 +1,21 @@
+/*! \file FCFS
+	\brief Main file
+
+	Main file. Contains the algorithm and the reading phase.
+*/
+
+
 #include <iostream>
 
 #include <queue>
 
 #include "Process.h"
+
+//! FCFS algorithm. All results (total execution time, total wait time, total idle time) are printed
+/*!
+  \param processQueue min-heap that contains processes
+  \return void
+*/
 
 void firstComeFirstServed(std::priority_queue<Process> processQueue)
 {
@@ -35,7 +48,10 @@ void firstComeFirstServed(std::priority_queue<Process> processQueue)
 	std::cout << "Total idle time: " << totalIdleTime << std::endl;
 }
 
-
+//! Function used to read processes.
+/*!
+  \return processQueue min-heap that contains processes
+*/
 std::priority_queue<Process> getProcessQueue()
 {
 	std::priority_queue<Process> processQueue;
@@ -58,6 +74,10 @@ std::priority_queue<Process> getProcessQueue()
 	return  processQueue;
 }
 
+//! Main function. Calles getProcessQueue and firstComeFirstServed.
+/*!
+  \return 0
+*/
 int main()
 {
 	std::priority_queue<Process> processQueue = getProcessQueue();

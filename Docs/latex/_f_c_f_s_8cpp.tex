@@ -1,0 +1,61 @@
+\hypertarget{_f_c_f_s_8cpp}{}\doxysection{FCFS.\+cpp File Reference}
+\label{_f_c_f_s_8cpp}\index{FCFS.cpp@{FCFS.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include \char`\"{}Process.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_f_c_f_s_8cpp_a0719320dfe5ff2d7518c59c759a3e243}{first\+Come\+First\+Served}} (std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{class_process}{Process}} $>$ process\+Queue)
+\begin{DoxyCompactList}\small\item\em FCFS algorithm. All results (total execution time, total wait time, total idle time) are printed. \end{DoxyCompactList}\item 
+std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{class_process}{Process}} $>$ \mbox{\hyperlink{_f_c_f_s_8cpp_af58a86e3c5ab95ff80789c0415b2a102}{get\+Process\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Function used to read processes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_f_c_f_s_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function. Calles get\+Process\+Queue and first\+Come\+First\+Served. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_f_c_f_s_8cpp_a0719320dfe5ff2d7518c59c759a3e243}\label{_f_c_f_s_8cpp_a0719320dfe5ff2d7518c59c759a3e243}} 
+\index{FCFS.cpp@{FCFS.cpp}!firstComeFirstServed@{firstComeFirstServed}}
+\index{firstComeFirstServed@{firstComeFirstServed}!FCFS.cpp@{FCFS.cpp}}
+\doxysubsubsection{\texorpdfstring{firstComeFirstServed()}{firstComeFirstServed()}}
+{\footnotesize\ttfamily void first\+Come\+First\+Served (\begin{DoxyParamCaption}\item[{std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{class_process}{Process}} $>$}]{process\+Queue }\end{DoxyParamCaption})}
+
+
+
+FCFS algorithm. All results (total execution time, total wait time, total idle time) are printed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+Queue} & min-\/heap that contains processes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_f_c_f_s_8cpp_af58a86e3c5ab95ff80789c0415b2a102}\label{_f_c_f_s_8cpp_af58a86e3c5ab95ff80789c0415b2a102}} 
+\index{FCFS.cpp@{FCFS.cpp}!getProcessQueue@{getProcessQueue}}
+\index{getProcessQueue@{getProcessQueue}!FCFS.cpp@{FCFS.cpp}}
+\doxysubsubsection{\texorpdfstring{getProcessQueue()}{getProcessQueue()}}
+{\footnotesize\ttfamily std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{class_process}{Process}} $>$ get\+Process\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function used to read processes. 
+
+\begin{DoxyReturn}{Returns}
+process\+Queue min-\/heap that contains processes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_f_c_f_s_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_f_c_f_s_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{FCFS.cpp@{FCFS.cpp}!main@{main}}
+\index{main@{main}!FCFS.cpp@{FCFS.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function. Calles get\+Process\+Queue and first\+Come\+First\+Served. 
+
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}

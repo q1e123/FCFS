@@ -1,0 +1,89 @@
+.TH "Process" 3 "Mon May 23 2022" "Version 2022.05" "FCFS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Process \- Class to emulate process proprieties\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Process\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProcess\fP (const std::string &name, double start_time, double completionTime)"
+.br
+.ti -1c
+.RI "std::string \fBget_name\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_name\fP (const std::string &name)"
+.br
+.ti -1c
+.RI "double \fBget_start_time\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_start_time\fP (const double start_time)"
+.br
+.ti -1c
+.RI "double \fBget_completion_t_ime\fP () const"
+.br
+.ti -1c
+.RI "void \fBset_completion_t_ime\fP (const double completion_t_ime)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBProcess\fP &lhs, const \fBProcess\fP &rhs)"
+.br
+.ti -1c
+.RI "bool \fBoperator<=\fP (const \fBProcess\fP &lhs, const \fBProcess\fP &rhs)"
+.br
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBProcess\fP &lhs, const \fBProcess\fP &rhs)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBProcess\fP &obj)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class to emulate process proprieties\&. 
+
+Class used to emulate process proprieties during FCFS algorithm 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Process::Process (const std::string & name, double start_time, double completionTime)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "double Process::get_completion_t_ime () const"
+
+.SS "std::string Process::get_name () const"
+
+.SS "double Process::get_start_time () const"
+
+.SS "void Process::set_completion_t_ime (const double completion_t_ime)"
+
+.SS "void Process::set_name (const std::string & name)"
+
+.SS "void Process::set_start_time (const double start_time)"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "bool operator< (const \fBProcess\fP & lhs, const \fBProcess\fP & rhs)\fC [friend]\fP"
+
+.SS "std::ostream & operator<< (std::ostream & os, const \fBProcess\fP & obj)\fC [friend]\fP"
+
+.SS "bool operator<= (const \fBProcess\fP & lhs, const \fBProcess\fP & rhs)\fC [friend]\fP"
+
+.SS "bool operator> (const \fBProcess\fP & lhs, const \fBProcess\fP & rhs)\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FCFS from the source code\&.
