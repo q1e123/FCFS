@@ -19,3 +19,13 @@ void Process::set_start_time(const double start_time)
 {
 	startTime = start_time;
 }
+
+double Process::get_completion_t_ime() const
+{
+	return completionTime;
+}
+
+void Process::set_completion_t_ime(const double completion_t_ime)
+{
+	completionTime = completion_t_ime;
+}
